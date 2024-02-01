@@ -1,0 +1,46 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/search"
+        android:contentDescription="getting know about admin purpose"
+        android:icon="@drawable/ic_baseline_person_search_24"
+        android:title="@string/info"
+        app:actionViewClass="androidx.appcompat.widget.SearchView"
+        app:showAsAction="always|collapseActionView" />
+    <item
+        android:id="@+id/info"
+        android:contentDescription="Info"
+        android:title="Info"
+        app:showAsAction="never|collapseActionView" />
+    <item
+        android:id="@+id/menu_search_option"
+        android:title="Sort User By"
+        app:showAsAction="withText">
+        <menu>
+            <group
+                android:id="@+id/group"
+                android:checkableBehavior="single"
+                android:menuCategory="container">
+                <item
+                    android:id="@+id/justNGO"
+                    android:title="NGO" />
+                <item
+                    android:id="@+id/justDonor"
+                    android:title="DONOR" />
+                <item
+                    android:id="@+id/justBlock"
+                    android:title="BLOCK" />
+                <item
+                    android:id="@+id/AllUser"
+                    android:checked="true"
+                    android:title="All USER" />
+            </group>
+        </menu>
+    </item>
+    <item
+        android:id="@+id/logout"
+        android:contentDescription="LogOut"
+        android:title="Log out"
+        app:showAsAction="never|collapseActionView" />
+</menu>

@@ -1,0 +1,41 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.FypAdmin" parent="Theme.MaterialComponents.Light">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/ForLightThemeBlue</item>
+        <item name="colorPrimaryVariant">@color/ForLightThemeBlue</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
+        <!-- Customize your theme here. -->
+        <item name="floatingActionButtonStyle">@style/Widget.App.FloatingActionButton</item>
+    </style>
+    <!--    For cardview background-->
+    <!--    Generic card view background-->
+    <style name="GenericCardColor" parent="@android:style/Widget">
+        <item name="android:foreground">@color/white</item>
+    </style>
+    <!--Relative layout theme for background purpose-->
+    <style name="backgroundStyle" parent="@android:style/Widget">
+        <item name="android:background">@color/ForLightThemeBlue</item>
+    </style>
+
+    <!-- Fab Styling   -->
+    <style name="Widget.App.FloatingActionButton" parent="Widget.MaterialComponents.FloatingActionButton">
+        <item name="materialThemeOverlay">@style/ThemeOverlay.App.FloatingActionButton</item>
+        <item name="shapeAppearanceOverlay">
+            @style/ShapeAppearance.App.SmallComponent
+        </item>
+    </style>
+
+    <style name="ThemeOverlay.App.FloatingActionButton" parent="">
+        <item name="colorSecondary">@color/ForLightThemeBlue</item>
+        <item name="colorOnSecondary">@color/white</item>
+        <item name="colorOnSurface">@color/black</item>
+    </style>
+
+    <style name="ShapeAppearance.App.SmallComponent" parent="ShapeAppearance.MaterialComponents.SmallComponent">
+        <item name="cornerFamily">cut</item>
+        <item name="cornerSize">4dp</item>
+    </style>
+    <!--    Fab Styling Finish-->
+</resources>

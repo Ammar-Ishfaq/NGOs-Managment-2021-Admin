@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardviewMain"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp"
+        app:cardElevation="5dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:weightSum="10">
+
+            <TextView
+                android:id="@+id/colorVerifier"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="    " />
+
+            <ImageView
+                android:id="@+id/chatImg"
+                android:layout_width="0dp"
+                android:layout_height="120dp"
+                android:layout_margin="10dp"
+                android:layout_weight="2"
+                android:src="@drawable/ic_baseline_person_24"
+                android:text="CHAT" />
+
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="8"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/email"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_margin="10dp"
+                    android:layout_weight="8"
+                    android:gravity="center|start"
+                    android:text="email"
+                    android:textColor="@color/ForLightThemeBlue"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/firstAndLastName"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_margin="10dp"
+                    android:layout_weight="8"
+                    android:gravity="center|start"
+                    android:text="firstAndLastName"
+                    android:textColor="@color/ForLightThemeBlue"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/NumberPersonal"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_margin="10dp"
+                    android:layout_weight="8"
+                    android:gravity="center|start"
+                    android:text="NumberPersonal"
+                    android:textColor="@color/ForLightThemeBlue"
+                    android:textSize="18sp" />
+
+                <LinearLayout
+                    android:id="@+id/expandLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:id="@+id/isAllow"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_margin="10dp"
+                        android:layout_weight="8"
+                        android:gravity="center|start"
+                        android:text="isAllow"
+                        android:textColor="@color/ForLightThemeBlue"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/accountType"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_margin="10dp"
+                        android:layout_weight="8"
+                        android:gravity="center|start"
+                        android:text="Accoutn type"
+                        android:textColor="@color/ForLightThemeBlue"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/dob"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_margin="10dp"
+                        android:layout_weight="8"
+                        android:gravity="center|start"
+                        android:text="Date of birth"
+                        android:textColor="@color/ForLightThemeBlue"
+                        android:textSize="18sp" />
+
+
+                    <TextView
+                        android:id="@+id/gender"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_margin="10dp"
+                        android:layout_weight="8"
+                        android:gravity="center|start"
+                        android:text="gender"
+                        android:textColor="@color/ForLightThemeBlue"
+                        android:textSize="18sp" />
+
+
+                    <TextView
+                        android:id="@+id/location"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_margin="10dp"
+
+                        android:layout_weight="8"
+                        android:gravity="center|start"
+                        android:text="location"
+                        android:textColor="@color/ForLightThemeBlue"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/numberEaisiPaisa"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:clickable="true"
+                        android:padding="5dp"
+                        android:text="numberEaisiPaisa"
+                        android:textColor="@color/ForLightThemeBlue"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/numberJazzcash"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_margin="10dp"
+                        android:layout_weight="8"
+                        android:gravity="center|start"
+                        android:text="numberJazzcash"
+                        android:textColor="@color/ForLightThemeBlue"
+                        android:textSize="18sp" />
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</LinearLayout>
